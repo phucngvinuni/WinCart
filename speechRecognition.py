@@ -17,7 +17,7 @@ try:
         print("Got it! Now to recognize it...")
         try:
             # recognize speech using Google Speech Recognition
-            value = r.recognize_google(audio) #chỗ này có thể thêm language="vi-VN" thành (audio, language="vi-VN") để nhận diện tiếng Việt
+            value = r.recognize_google(audio,language="vi-VN") #chỗ này có thể thêm language="vi-VN" thành (audio, language="vi-VN") để nhận diện tiếng Việt
 
             print("You said {}".format(value))
         except sr.UnknownValueError:
